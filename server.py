@@ -29,7 +29,8 @@ def render_index_page():
     """
     Render the main index page.
     """
-    return "Emotion Detection Application"
+    from flask import render_template
+    return render_template('index.html')
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
